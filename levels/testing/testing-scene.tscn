@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b72ra4c1fjhuc"]
 
 [ext_resource type="PackedScene" uid="uid://jmyg6xhf3yi3" path="res://levels/testing/player.tscn" id="1_2tpb7"]
+[ext_resource type="PackedScene" uid="uid://biucbtob62inr" path="res://assets/ui/coin_tracker.tscn" id="2_2o8my"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vrvyi"]
 
@@ -12,3 +13,5 @@ scale = Vector2(1155, 644.50006)
 texture = SubResource("PlaceholderTexture2D_vrvyi")
 
 [node name="Player" parent="." unique_id=383563599 instance=ExtResource("1_2tpb7")]
+
+[node name="CoinTracker" parent="." unique_id=525095395 instance=ExtResource("2_2o8my")]

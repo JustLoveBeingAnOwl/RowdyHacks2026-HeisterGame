@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://biucbtob62inr"]
+
+[ext_resource type="Script" uid="uid://dj1spg6glqr7n" path="res://assets/ui/coin_label.gd" id="1_6h8j5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hh86f"]
+font_size = 32
+
+[node name="CoinTracker" type="Control" unique_id=525095395]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CoinLabel" type="Label" parent="." unique_id=1893398640]
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 182.0
+text = "Coins Collected: "
+label_settings = SubResource("LabelSettings_hh86f")
+horizontal_alignment = 1
+script = ExtResource("1_6h8j5")
