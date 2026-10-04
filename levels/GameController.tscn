@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b61kycj66cfcu"]
+
+[ext_resource type="Script" uid="uid://7mi5fxldn6v1" path="res://levels/game_controller.gd" id="1_lx281"]
+
+[node name="GameController" type="Node" unique_id=963407378]
+script = ExtResource("1_lx281")
