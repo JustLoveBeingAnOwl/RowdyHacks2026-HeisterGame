@@ -1,11 +1,25 @@
 [gd_scene format=3 uid="uid://jmyg6xhf3yi3"]
 
 [ext_resource type="Script" uid="uid://1cculmjif023" path="res://levels/testing/player.gd" id="1_ecwmf"]
+[ext_resource type="Texture2D" uid="uid://dn38jpk2e612m" path="res://assets/sprites/pig_walk_1.png" id="2_s2tw8"]
+[ext_resource type="Texture2D" uid="uid://vvl20bhcu4eq" path="res://assets/sprites/pig_walk_2.png" id="3_y1nw1"]
+[ext_resource type="Script" uid="uid://wl1y70kt3m05" path="res://levels/testing/player_animator.gd" id="4_y1nw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrvyi"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_hh86f"]
-size = Vector2(5, 5)
+[sub_resource type="SpriteFrames" id="SpriteFrames_y6kor"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_s2tw8")
+}, {
+"duration": 2.0,
+"texture": ExtResource("3_y1nw1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D" unique_id=383563599]
 script = ExtResource("1_ecwmf")
@@ -13,7 +27,8 @@ script = ExtResource("1_ecwmf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1058855237]
 shape = SubResource("RectangleShape2D_vrvyi")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=265881545]
-position = Vector2(-2.9802322e-07, 1.1622906e-06)
-scale = Vector2(3.9999998, 4)
-texture = SubResource("PlaceholderTexture2D_hh86f")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=888063942]
+scale = Vector2(0.14684328, 0.14684328)
+sprite_frames = SubResource("SpriteFrames_y6kor")
+frame_progress = 0.017975708
+script = ExtResource("4_y1nw1")

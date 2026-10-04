@@ -15,3 +15,5 @@ func _process(delta):
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, speed)
 	move_and_slide()
+	
+	
